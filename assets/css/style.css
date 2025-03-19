@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Young Serif';
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  :root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    color: var(--stone-600);
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--stone-100);
+  }
+
+  hr {
+    border: none;
+    background-color: var(--stone-150);
+    height: 1px;
+  }
+
+  h1,
+  h2 {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+  }
+
+  .container {
+    max-width: 736px;
+    padding: 42px;
+    background-color: var(--white);
+    border-radius: 20px;
+    margin: 122px 0;
+  }
+
+  main img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  main h1 {
+    margin: 42px 0 24px;
+    color: var(--stone-900);
+  }
+
+  .preparation-time {
+    background-color: var(--rose-50);
+    margin: 35px 0;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  .preparation-time h3 {
+    color: var(--rose-800);
+  }
+
+  .preparation-time ul {
+    padding: 22px 0 0 22px;
+    margin: 0;
+
+  }
+
+  h2 {
+    color: var(--brown-800);
+    margin: 30px 0;
+  }
+
+  ul,
+  ol {
+    margin: 30px 0;
+    padding: 0 30px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .nutrition-item td {
+    text-align: left;
+    padding: 10px 30px;
+  }
+
+  .nutrition-item td:nth-child(2) {
+    color: var(--brown-800);
+    font-weight: 700;
+  }
+
+  @media (max-width: 450px) {
+    .container {
+      padding: 42px;
+      margin: 0;
+    }
+
+    body {
+      background-color: var(--white);
+    }
+
+    .container {
+      padding-top: 162px;
+      margin: 0;
+   
+    }
+
+    main img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 0;
+    }
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
